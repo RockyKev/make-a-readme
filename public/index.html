@@ -4,35 +4,33 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        <title>Make a README</title>
+        <title>Spokane Front-End Dev Meetups</title>
 
         <!-- Search Engine -->
         <meta
             name="description"
-            content="Learn how to make a great README for your programming project, and use the editable template to get started."
+            content="For front-end developers (or those interested in coding) to share their current projects, work on challenges, socialize and collaborate. Free."
         />
         <!-- Schema.org for Google -->
-        <meta itemprop="name" content="Make a README" />
+        <meta itemprop="name" content="Spokane Front-End Meetup" />
         <meta
             itemprop="description"
-            content="Learn how to make a great README for your programming project, and use the editable template to get started."
+            content="For front-end developers (or those interested in coding) to share their current projects, work on challenges, socialize and collaborate. Free."
         />
         <!-- Twitter -->
         <meta name="twitter:card" content="summary" />
-        <meta name="twitter:title" content="Make a README" />
-        <meta
-            name="twitter:description"
-            content="Learn how to make a great README for your programming project, and use the editable template to get started."
-        />
-        <meta name="twitter:creator" content="@dannyguo" />
+        <meta name="twitter:title" content="Spokane Front-End Dev Meetup" />
+        <meta name="twitter:description" content="For front-end developers (or
+        those interested in coding) to share their current projects, work on
+        challenges, socialize and collaborate. Free."" />
+        <meta name="twitter:creator" content="@rockykev" />
         <!-- Open Graph general (Facebook, Pinterest & Google+) -->
-        <meta property="og:title" content="Make a README" />
-        <meta
-            property="og:description"
-            content="Learn how to make a great README for your programming project, and use the editable template to get started."
-        />
+        <meta property="og:title" content="Spokane Front-End Dev Meetup" />
+        <meta property="og:description" content="For front-end developers (or
+        those interested in coding) to share their current projects, work on
+        challenges, socialize and collaborate. Free."" />
         <meta property="og:url" content="https://www.makeareadme.com" />
-        <meta property="og:site_name" content="Make a README" />
+        <meta property="og:site_name" content="Spokane Front-End Dev Meetup" />
         <meta property="og:type" content="website" />
         <meta
             property="og:image"
@@ -41,8 +39,6 @@
         <meta property="og:image:type" content="image/png" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
-        <!-- Flattr -->
-        <meta name="flattr:id" content="g6gjzx" />
 
         <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
 
@@ -68,19 +64,6 @@
         />
         <link rel="stylesheet" href="index.css" />
 
-        <!-- Google Analytics -->
-        <script
-            async
-            src="https://www.googletagmanager.com/gtag/js?id=UA-104519836-1"
-        ></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag() {
-                dataLayer.push(arguments);
-            }
-            gtag('js', new Date());
-            gtag('config', 'UA-104519836-1');
-        </script>
     </head>
     <body>
         <!-- GitHub corner -->
@@ -137,528 +120,426 @@
             }
         </style>
 
-        <section class="hero is-dark is-medium is-bold">
+        <section class="hero is-dark is-medium is-bold bg-img">
             <div class="hero-body has-text-centered">
                 <p>
-                    <span class="fa-stack fa-3x">
+                    <!-- <span class="fa-stack fa-3x">
                         <i class="fa fa-circle fa-stack-2x"></i>
                         <i
                             class="fa fa-file-text fa-stack-1x has-text-grey-darker"
                         ></i>
-                    </span>
+                    </span> -->
+                    <img
+                        src="/images/spokane front-end meetup-400x.png"
+                        style="width:150px"
+                    />
                 </p>
 
-                <h1 class="title is-2">Make a README</h1>
+                <!-- <h1 class="title is-2">Make a README</h1> -->
                 <p class="subtitle is-4">
-                    Because no one can read your mind (<a
-                        id="yet"
-                        href="#mind-reading"
-                        >yet</a
-                    >)
+                    A Bi-monthly meetup for learning and growth for the Spokane
+                    Dev community
                 </p>
             </div>
+            <p class="has-text-centered is-size-7 is-italic">
+                Photo by Helena Lopes on Unsplash
+            </p>
         </section>
 
-        <div id="codefund"></div>
-
+        <!-- <div id="codefund"></div>
+s
         <div id="ad-separator"></div>
-
-        <section class="section">
-            <div class="container">
-                <h2 class="title is-3 has-text-centered">README 101</h2>
-
-                <h3 class="title is-4">What is it?</h3>
-                <p>
-                    A
-                    <a href="https://en.wikipedia.org/wiki/README">README</a> is
-                    a text file that introduces and explains a project. It
-                    contains information that is commonly required to understand
-                    what the project is about.
-                </p>
-
-                <h3 class="title is-4">Why should I make it?</h3>
-                <p>
-                    It's an easy way to answer questions that your audience will
-                    likely have regarding how to install and use your project
-                    and also how to collaborate with you.
-                </p>
-
-                <h3 class="title is-4">Who should make it?</h3>
-                <p>
-                    Anyone who is working on a programming project, especially
-                    if you want others to use it or contribute.
-                </p>
-
-                <h3 class="title is-4">When should I make it?</h3>
-                <p>
-                    Definitely before you show a project to other people or make
-                    it public. You might want to get into the habit of making it
-                    the
-                    <a
-                        href="http://tom.preston-werner.com/2010/08/23/readme-driven-development.html"
-                        >first file you create</a
-                    >
-                    in a new project.
-                </p>
-
-                <h3 class="title is-4">Where should I put it?</h3>
-                <p>
-                    In the top level directory of the project. This is where
-                    someone who is new to your project will start out. Code
-                    hosting services such as
-                    <a href="https://github.com/">GitHub</a>,
-                    <a href="https://bitbucket.org/">Bitbucket</a>, and
-                    <a href="https://about.gitlab.com/">GitLab</a> will also
-                    look for your README and display it along with the list of
-                    files and directories in your project.
-                </p>
-
-                <h3 class="title is-4">How should I make it?</h3>
-                <p>
-                    While READMEs can be written in any text file format, the
-                    most common one that is used nowadays is
-                    <a href="https://en.wikipedia.org/wiki/Markdown">Markdown</a
-                    >. It allows you to add some lightweight formatting. You can
-                    learn more about it
-                    <a href="http://commonmark.org/">here</a>, which also has a
-                    helpful
-                    <a href="http://commonmark.org/help/">reference guide</a>
-                    and an
-                    <a href="http://commonmark.org/help/tutorial/"
-                        >interactive tutorial</a
-                    >. Some other formats that you might see are
-                    <a href="https://en.wikipedia.org/wiki/Text_file"
-                        >plain text</a
-                    >,
-                    <a href="https://en.wikipedia.org/wiki/ReStructuredText"
-                        >reStructuredText</a
-                    >
-                    (common in
-                    <a href="https://www.python.org/">Python</a> projects), and
-                    <a
-                        href="https://en.wikipedia.org/wiki/Textile_(markup_language)"
-                        >Textile</a
-                    >.
-                </p>
-                <p>
-                    You can use any text editor. There are plugins for many
-                    editors (e.g.
-                    <a href="https://github.com/atom/markdown-preview">Atom</a>,
-                    <a href="https://github.com/jrblevin/markdown-mode">Emacs</a
-                    >,
-                    <a
-                        href="https://github.com/revolunet/sublimetext-markdown-preview"
-                        >Sublime Text</a
-                    >,
-                    <a href="https://github.com/suan/vim-instant-markdown"
-                        >Vim</a
-                    >, and
-                    <a
-                        href="https://code.visualstudio.com/docs/languages/markdown#_markdown-preview"
-                        >Visual Studio Code</a
-                    >) that allow you to preview Markdown while you are editing
-                    it.
-                </p>
-                <p>
-                    You can also use a dedicated Markdown editor like
-                    <a href="https://typora.io/">Typora</a> or an online one
-                    like <a href="https://stackedit.io/editor">StackEdit</a> or
-                    <a href="http://dillinger.io/">Dillinger</a>. You can even
-                    use the editable template below.
-                </p>
-            </div>
-        </section>
-
-        <section id="template" class="section">
-            <h2 class="title has-text-centered has-text-light">Template</h2>
-
-            <div class="columns">
-                <div class="column">
-                    <h3 class="title is-4 has-text-centered has-text-light">
-                        Markdown Input (editable)
-                    </h3>
-                    <textarea>
-# Foobar
-
-Foobar is a Python library for dealing with word pluralization.
-
-## Installation
-
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
-
-```bash
-pip install foobar
-```
-
-## Usage
-
-```python
-import foobar
-
-foobar.pluralize('word') # returns 'words'
-foobar.pluralize('goose') # returns 'geese'
-foobar.singularize('phenomena') # returns 'phenomenon'
-```
-
-## Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-
-Please make sure to update tests as appropriate.
-
-## License
-[MIT](https://choosealicense.com/licenses/mit/)</textarea
-                    >
-                </div>
-                <div class="column">
-                    <h3 class="title is-4 has-text-centered has-text-light">
-                        Rendered
-                    </h3>
-                    <div id="rendered" class="markdown-body"></div>
-                </div>
-            </div>
-        </section>
-
+ -->
         <section class="section">
             <div class="container">
                 <h2 class="title is-3 has-text-centered">
-                    Suggestions for a good README
+                    Spokane Front-End Devs Meetup
                 </h2>
 
-                <p>
-                    Every project is different, so consider which of these
-                    sections apply to yours. The sections used in the template
-                    are suggestions for most open source projects. Also keep in
-                    mind that while a README can be too long and detailed, too
-                    long is better than too short. If you think your README is
-                    too long, consider utilizing
-                    <a href="#more-documentation"
-                        >another form of documentation</a
-                    >
-                    rather than cutting out information.
-                </p>
-
-                <h3 class="title is-4">Name</h3>
-                <p>Choose a self-explaining name for your project.</p>
-
-                <h3 class="title is-4">Description</h3>
-                <p>
-                    Let people know what your project can do specifically.
-                    Provide context and add a link to any reference visitors
-                    might be unfamiliar with. A list of <b>Features</b> or a
-                    <b>Background</b> subsection can also be added here. If
-                    there are alternatives to your project, this is a good place
-                    to list differentiating factors.
-                </p>
-
-                <h3 class="title is-4">Badges</h3>
-                <p>
-                    On some READMEs, you may see small images that convey
-                    metadata, such as whether or not all the tests are passing
-                    for the project. You can use
-                    <a href="http://shields.io/">Shields</a> to add some to your
-                    README. Many services also have instructions for adding a
-                    badge.
-                </p>
-
-                <h3 class="title is-4">Visuals</h3>
-                <p>
-                    Depending on what you are making, it can be a good idea to
-                    include screenshots or even a video (you'll frequently see
-                    GIFs rather than actual videos). Tools like
-                    <a href="https://github.com/icholy/ttygif">ttygif</a> can
-                    help, but check out
-                    <a href="https://asciinema.org/">Asciinema</a> for a more
-                    sophisticated method.
-                </p>
-
-                <h3 class="title is-4">Installation</h3>
-                <p>
-                    Within a particular ecosystem, there may be a common way of
-                    installing things, such as using
-                    <a href="https://yarnpkg.com">Yarn</a>,
-                    <a href="https://www.nuget.org/">NuGet</a>, or
-                    <a href="https://brew.sh/">Homebrew</a>. However, consider
-                    the possibility that whoever is reading your README is a
-                    novice and would like more guidance. Listing specific steps
-                    helps remove ambiguity and gets people to using your project
-                    as quickly as possible. If it only runs in a specific
-                    context like a particular programming language version or
-                    operating system or has dependencies that have to be
-                    installed manually, also add a
-                    <b>Requirements</b> subsection.
-                </p>
-
-                <h3 class="title is-4">Usage</h3>
-                <p>
-                    Use examples liberally, and show the expected output if you
-                    can. It's helpful to have inline the smallest example of
-                    usage that you can demonstrate, while providing links to
-                    more sophisticated examples if they are too long to
-                    reasonably include in the README.
-                </p>
-
-                <h3 class="title is-4">Support</h3>
-                <p>
-                    Tell people where they can go to for help. It can be any
-                    combination of an issue tracker, a chat room, an email
-                    address, etc.
-                </p>
-
-                <h3 class="title is-4">Roadmap</h3>
-                <p>
-                    If you have ideas for releases in the future, it is a good
-                    idea to list them in the README.
-                </p>
-
-                <h3 class="title is-4">Contributing</h3>
-                <p>
-                    State if you are open to contributions and what your
-                    requirements are for accepting them.
-                </p>
-                <p>
-                    For people who want to make changes to your project, it's
-                    helpful to have some documentation on how to get started.
-                    Perhaps there is a script that they should run or some
-                    environment variables that they need to set. Make these
-                    steps explicit. These instructions could also be useful to
-                    your future self.
-                </p>
-                <p>
-                    You can also document commands to
-                    <a
-                        href="https://stackoverflow.com/questions/8503559/what-is-linting"
-                        >lint the code</a
-                    >
-                    or
-                    <a href="https://en.wikipedia.org/wiki/Test_automation"
-                        >run tests</a
-                    >. These steps help to ensure high code quality and reduce
-                    the likelihood that the changes inadvertently break
-                    something. Having instructions for running tests is
-                    especially helpful if it requires external setup, such as
-                    starting a
-                    <a href="http://www.seleniumhq.org/">Selenium</a> server for
-                    testing in a browser.
-                </p>
-
-                <h3 class="title is-4">Authors and acknowledgment</h3>
-                <p>
-                    Show your appreciation to those who have contributed to the
-                    project.
-                </p>
-
-                <h3 class="title is-4">License</h3>
-                <p>
-                    For open source projects, say how it is
-                    <a href="#license-1">licensed</a>.
-                </p>
-
-                <h3 class="title is-4">Project status</h3>
-                <p>
-                    If you have run out of energy or time for your project, put
-                    a note at the top of the README saying that development has
-                    slowed down or stopped completely. Someone may choose to
-                    fork your project or volunteer to step in as a maintainer or
-                    owner, allowing your project to keep going. You can also
-                    make an explicit request for maintainers.
-                </p>
+                <div class="code-of-conduct-content">
+                    <ol>
+                        <li class="title is-4"><strong> Purpose</strong></li>
+                    </ol>
+                    <ul>
+                        <li>
+                            A primary goal of the Spokane Front-End Dev Meetup
+                            is to be inclusive to the largest number of
+                            participants, with the most varied and diverse
+                            backgrounds possible. As such, we are committed to
+                            providing a friendly, safe and welcoming learning
+                            environment for all, regardless of gender, sexual
+                            orientation, ability, ethnicity, socioeconomic
+                            status, and religion (or lack thereof).
+                        </li>
+                        <li>
+                            This code of conduct outlines our expectations for
+                            all those who participate in our community, as well
+                            as the consequences for unacceptable behavior.
+                        </li>
+                        <li>
+                            We invite all those who participate in Spokane
+                            Front-End Dev meetup activities to help us create
+                            safe and positive experiences for everyone.&nbsp;
+                        </li>
+                    </ul>
+                    <ol start="2">
+                        <li class="title is-4">
+                            <strong>
+                                Open Source &amp; Culture Citizenship</strong
+                            >
+                        </li>
+                    </ol>
+                    <ul>
+                        <li>
+                            A supplemental goal of this Code of Conduct is to
+                            increase open source and culture citizenship by
+                            encouraging participants to recognize and strengthen
+                            the relationships between our actions and their
+                            effects on our community.
+                        </li>
+                        <li>
+                            Communities mirror the societies in which they exist
+                            and positive action is essential to counteract the
+                            many forms of inequality and abuses of power that
+                            exist in society.
+                        </li>
+                        <li>
+                            If you see someone who is making an extra effort to
+                            ensure our community is welcoming, friendly, and
+                            encourages all participants to contribute to the
+                            fullest extent, please recognize their efforts.
+                        </li>
+                    </ul>
+                    <ol start="3">
+                        <li class="title is-4">
+                            <strong> Expected Behavior</strong>
+                        </li>
+                    </ol>
+                    <ul>
+                        <li>Be considerate, respectful, and collaborative.</li>
+                        <li>Assume positive intent.</li>
+                        <li>
+                            Refrain from demeaning, discriminatory or harassing
+                            behavior and speech.
+                        </li>
+                        <li>
+                            Be mindful of your surroundings and of your fellow
+                            participants.
+                        </li>
+                        <li>
+                            Alert community organizers if you notice a dangerous
+                            situation or someone in distress.
+                        </li>
+                        <li>
+                            Participate in an authentic and active way. In doing
+                            so, you help to create a better learning environment
+                            for you and your peers.
+                        </li>
+                    </ul>
+                    <ol start="4">
+                        <li class="title is-4">
+                            <strong> Unacceptable Behavior</strong>
+                        </li>
+                    </ol>
+                    <ul>
+                        <li>
+                            Unacceptable behaviors include: intimidating,
+                            harassing, abusive, discriminatory, derogatory or
+                            demeaning conduct by any members of the Spokane
+                            Front-End Dev group and related events.
+                        </li>
+                        <li>
+                            Harassment includes: offensive verbal comments
+                            related to gender, sexual orientation, race,
+                            religion, disability; inappropriate use of nudity
+                            and/or sexual images in public spaces (including
+                            presentation slides); deliberate intimidation,
+                            stalking or following; harassing photography or
+                            recording; sustained disruption of talks or other
+                            events; inappropriate physical contact, and
+                            unwelcome sexual attention.
+                        </li>
+                    </ul>
+                    <ol start="5">
+                        <li class="title is-4">
+                            <strong>
+                                Consequences of Unacceptable Behavior</strong
+                            >
+                        </li>
+                    </ol>
+                    <ul>
+                        <li>
+                            Unacceptable behavior from any community member,
+                            including sponsors and those with decision-making
+                            authority, will not be tolerated.
+                        </li>
+                        <li>
+                            Anyone asked to stop unacceptable behavior is
+                            expected to comply immediately.
+                        </li>
+                        <li>
+                            If a community member engages in unacceptable
+                            behavior, we may take any action deemed appropriate,
+                            up to and including a temporary ban or permanent
+                            expulsion from the community without warning (and
+                            without refund in the case of a paid event).
+                        </li>
+                    </ul>
+                    <ol start="6">
+                        <li class="title is-4"><strong> Scope</strong></li>
+                    </ol>
+                    <ul>
+                        <li>
+                            We expect all community participants (contributors,
+                            paid or otherwise; sponsors; and other guests) to
+                            abide by this Code of Conduct, as well
+                            as&nbsp;the&nbsp;<a
+                                href="https://inlandnorthwest.tech/code-of-conduct/"
+                                >Inland Northwest Tech Code of Conduct</a
+                            >&nbsp;in all community venues&ndash;online and
+                            in-person&ndash;as well as in all one-on-one
+                            communications pertaining to community business.
+                        </li>
+                        <li>
+                            This code of conduct and its related procedures also
+                            applies to unacceptable behavior occurring outside
+                            the scope of community activities when such behavior
+                            has the potential to adversely affect the safety and
+                            well-being of community members.
+                        </li>
+                    </ul>
+                    <ol start="7">
+                        <li class="title is-4">
+                            <strong> Contact info</strong>
+                        </li>
+                    </ol>
+                    <ul>
+                        <li>
+                            Contact can be done in person at the meetup, or via
+                            <a
+                                href="mailto:rkev.defylogic+spokanefe@gmail.com"
+                                target="_blank"
+                                >Email here.</a
+                            >
+                        </li>
+                    </ul>
+                    <ol start="8">
+                        <li class="title is-4">
+                            <strong> License And Attribution</strong>
+                        </li>
+                    </ol>
+                    <ul>
+                        <li>
+                            This Code of Conduct is heavily borrowed from the
+                            awesome work of Open Source Bridge. The original is
+                            available at
+                            <a
+                                href="http://opensourcebridge.org/about/code-of-conduct/"
+                                >http://opensourcebridge.org/about/code-of-conduct/</a
+                            >
+                            and is released under a Creative Commons
+                            Attribution-ShareAlike license.
+                        </li>
+                    </ul>
+                </div>
             </div>
         </section>
 
         <section id="faq" class="section">
-            <h2 class="title has-text-centered has-text-light">FAQ</h2>
+            <h2 class="title has-text-centered has-text-light">
+                Frequently Asked Questions
+            </h2>
 
             <article class="message is-warning">
                 <h3 class="message-header">
-                    Is there a standard README format?
+                    How is this set up?
                 </h3>
                 <div class="message-body">
-                    Not all of the suggestions here will make sense for every
-                    project, so it's really up to the developers what
-                    information should be included in the README.
-                </div>
-            </article>
+                    <p>
+                        All events are open-ended. The space is separated into 3
+                        partitions: A <strong>Hangout area</strong>, a
+                        <strong>Work area</strong>, and a
+                        <strong>Meeting room</strong> for topics.
+                    </p>
+                    <p>
+                        You are free to join the
+                        <strong>Hangout area</strong> and talk about the latest
+                        in web development, ask for tech help in the
+                        <strong>Work area</strong>, or participate in a group
+                        conversation in the <strong>Meeting room</strong>.
+                    </p>
+                    <p>
+                        This format has been experimented and improved at
+                        meetups like
+                        <a
+                            href="https://www.meetup.com/Mentorship-Saturdays/"
+                            target="_blank"
+                            >Mentorship Saturday</a
+                        >
+                        and
+                        <a
+                            href="https://www.meetup.com/Free-Code-Camp-Portland/"
+                            target="_blank"
+                            >Free Code Camp PDX</a
+                        >.
+                    </p>
 
-            <article class="message is-warning">
-                <h3 class="message-header">
-                    What are some other thoughts on writing READMEs?
-                </h3>
-                <div class="message-body">
-                    Check out
-                    <a href="https://github.com/matiassingers/awesome-readme"
-                        >Awesome README</a
-                    >
-                    for a list of more resources.
-                </div>
-            </article>
-
-            <article class="message is-warning">
-                <h3 class="message-header">
-                    What should the README file be named?
-                </h3>
-                <div class="message-body">
-                    <code>README.md</code> (or a different file extension if you
-                    choose to use a non-Markdown file format). It is
-                    <a
-                        href="https://softwareengineering.stackexchange.com/q/301691/298927"
-                        >traditionally uppercase</a
-                    >
-                    so that it is more prominent, but it's not a big deal if you
-                    think it
-                    <a href="https://github.com/sindresorhus/ama/issues/197"
-                        >looks better lowercase</a
-                    >.
+                    <p>The main thing is -- these meetup are FOR YOU.</p>
                 </div>
             </article>
 
             <article class="message is-warning">
                 <h3 class="message-header">
-                    What if I disagree with something, want to make a change, or
-                    have any other feedback?
+                    I see there are events topics. How do they look like?
                 </h3>
                 <div class="message-body">
-                    Please don't hesitate to open an
-                    <a href="https://github.com/dguo/make-a-readme/issues"
-                        >issue</a
-                    >
-                    or
-                    <a href="https://github.com/dguo/make-a-readme/pulls"
-                        >pull request</a
-                    >. You can also send me a message on
-                    <a href="https://twitter.com/dannyguo">Twitter</a>.
+                    <p>
+                        All events topics it's optional. You are invited to come
+                        to hang out, or get some work done in a
+                        <strong>Hangout area</strong>. The topic of the meetup
+                        are suggested, not forced. It can be a round-table, a
+                        presentation, or even a hands-on workshop -- all
+                        depending on the experience level and interest of the
+                        attendees.
+                    </p>
+                    <p>
+                        For example: a topic on Vue may be workshop style. While
+                        a topic about the future of JavaScript may be a
+                        round-table discussion.
+                    </p>
                 </div>
             </article>
 
             <article class="message is-warning">
-                <h3 class="message-header">Mind reading?</h3>
+                <h3 class="message-header">
+                    Im (new, experienced, expert, etc) to coding, why should I
+                    come?
+                </h3>
                 <div class="message-body">
-                    <a
-                        href="https://www.usatoday.com/story/tech/2014/04/22/mind-reading-brain-scans/7747831/"
-                        >Scientists</a
-                    >
-                    and companies like
-                    <a
-                        href="https://www.theverge.com/2017/4/20/15375176/facebook-regina-dugan-interview-building-8-mind-reading-f8-2017"
-                        >Facebook</a
-                    >
-                    and
-                    <a href="https://www.neuralink.com/">Neuralink</a>
-                    (presumably) are working on it. Perhaps in the future,
-                    you'll be able to attach a copy of your thoughts and/or
-                    consciousness to your projects. In the meantime, please make
-                    READMEs.
+                    <p>From my experience:</p>
+                    <p>
+                        Those new to coding attend to chat developers to see
+                        what the best way is to achieve their learning outcome.
+                        Maybe it's a bootcamp to attend, a online course to buy,
+                        or a youtube training to check out.
+                    </p>
+                    <p>
+                        Experienced developers come to keep in the loop. We see
+                        our friends, learn about new technologies, and stay on
+                        top of the evolving landscape.
+                    </p>
+                    <p>
+                        Expert developers attend to mentor and advise. Many
+                        attend to look for networking opportunities as well - as
+                        their years of expertise is very much needed in many
+                        organizations and companies.
+                    </p>
                 </div>
             </article>
-        </section>
 
-        <section class="section">
-            <div class="container">
-                <h2 class="title has-text-centered">What's next?</h2>
-
-                <h3 class="title is-4">License</h3>
-                <p>
-                    If your project is
-                    <a href="https://en.wikipedia.org/wiki/Open-source_software"
-                        >open source</a
-                    >, it's
-                    <a
-                        href="https://blog.codinghorror.com/pick-a-license-any-license/"
-                        >important</a
-                    >
-                    to include a
-                    <a href="https://en.wikipedia.org/wiki/Open-source_license"
-                        >license</a
-                    >. You can use
-                    <a href="https://choosealicense.com/">this website</a> to
-                    help you pick one.
-                </p>
-
-                <h3 class="title is-4">Changelog</h3>
-                <p>
-                    Make a README is inspired by
-                    <a href="http://keepachangelog.com/">Keep a Changelog</a>. A
-                    <a href="https://en.wikipedia.org/wiki/Changelog"
-                        >changelog</a
-                    >
-                    is another file that is very useful for programming
-                    projects.
-                </p>
-
-                <h3 class="title is-4">More Documentation</h3>
-                <p>
-                    A README is a crucial but basic way of documenting your
-                    project. While every project should at least have a README,
-                    more involved ones can also benefit from a
-                    <a href="https://en.wikipedia.org/wiki/Wiki">wiki</a> or a
-                    dedicated documentation website.
-                    <a
-                        href="https://help.github.com/articles/about-github-wikis/"
-                        >GitHub</a
-                    >,
-                    <a
-                        href="https://confluence.atlassian.com/bitbucket/use-a-wiki-221449748.html"
-                        >Bitbucket</a
-                    >, and
-                    <a
-                        href="https://docs.gitlab.com/ce/user/project/wiki/index.html"
-                        >GitLab</a
-                    >
-                    all support maintaining a wiki alongside your project, and
-                    here are some tools and services that can help you generate
-                    a documentation website:
-                </p>
-
-                <div class="content">
-                    <ul>
-                        <li><a href="https://dauxio.github.io/">Daux.io</a></li>
-                        <li><a href="https://docusaurus.io/">Docusaurus</a></li>
-                        <li><a href="https://www.gitbook.com/">GitBook</a></li>
-                        <li><a href="https://www.mkdocs.org/">MkDocs</a></li>
-                        <li>
-                            <a href="https://readthedocs.org/">Read the Docs</a>
-                        </li>
-                        <li><a href="https://readme.io/">ReadMe</a></li>
-                        <li>
-                            <a href="https://github.com/lord/slate">Slate</a>
-                        </li>
-                    </ul>
+            <article class="message is-warning">
+                <h3 class="message-header">
+                    I'm a developer but I'm not into front-end development,
+                    should I still come?
+                </h3>
+                <div class="message-body">
+                    <p>
+                        Absolutely! Front-end has grown beyond just being a
+                        designer/UX. Front-end developers are making apps,
+                        writing code for drones, making video games and setting
+                        up database schema.
+                    </p>
+                    <p>
+                        The Front-End community can always use experts in
+                        different fields - from robotics, to backend, to
+                        engineering, to even gaming.
+                    </p>
                 </div>
+            </article>
 
-                <h3 class="title is-4">Contributing</h3>
-                <p>
-                    Just having a "Contributing" section in your README is a
-                    good start. Another approach is to split off your guidelines
-                    into their own file (<code>CONTRIBUTING.md</code>). If you
-                    use GitHub and have this file, then anyone who creates an
-                    issue or opens a pull request
-                    <a
-                        href="https://help.github.com/articles/setting-guidelines-for-repository-contributors/"
-                    >
-                        will get a link
-                    </a>
-                    to it.
-                </p>
-                <p>
-                    You can also create an
-                    <a
-                        href="https://help.github.com/articles/creating-an-issue-template-for-your-repository/"
-                        >issue template
-                    </a>
-                    and a
-                    <a
-                        href="https://help.github.com/articles/creating-a-pull-request-template-for-your-repository/"
-                        >pull request template</a
-                    >. These files give your users and collaborators templates
-                    to fill in with the information that you'll need to properly
-                    respond. This helps to avoid situations like getting very
-                    vague issues. Both GitHub and
-                    <a
-                        href="https://docs.gitlab.com/ce/user/project/description_templates.html"
-                        >GitLab</a
-                    >
-                    will use the templates automatically.
-                </p>
-            </div>
+            <article class="message is-warning">
+                <h3 class="message-header">
+                    I'm not a developer, should I come?
+                </h3>
+                <div class="message-body">
+                    <p>
+                        You're invited! Many entrepreneurs come in to solve
+                        particular tech problems, and end up learning how to
+                        code themselves. Others come to find problem solvers.
+                        Many opportunities have been created when you put
+                        non-technicals and developers together in a room.
+                    </p>
+                </div>
+            </article>
+
+            <article class="message is-warning">
+                <h3 class="message-header">
+                    I'd love to do a talk/pitch. What needs to happen?
+                </h3>
+                <div class="message-body">
+                    <p>The meetup is pretty open-ended.</p>
+                    <p>
+                        If it's based on the topic of the meetup, you can join
+                        the<strong> Meeting room</strong> area. Otherwise,
+                        announce your talk, gather some people and find a empty
+                        meeting room!
+                    </p>
+                </div>
+            </article>
+
+            <article class="message is-warning">
+                <h3 class="message-header">Should I bring a laptop?</h3>
+                <div class="message-body">
+                    <p>Absolutely and highly recommended.</p>
+                </div>
+            </article>
+
+            <article class="message is-warning">
+                <h3 class="message-header">
+                    Is the event always on Mondays in the evening? That's dinner
+                    time! FIX
+                </h3>
+                <div class="message-body">
+                    <p>As long as there is interest -- YES.</p>
+                    <p>Developers should not have to choose....</p>
+                    <p>We are partnered with [link to pizza]</p>
+                </div>
+            </article>
+
+            <article class="message is-warning">
+                <h3 class="message-header">How do I volunteer/help out/etc?</h3>
+                <div class="message-body">
+                    <p>
+                        Visit a meetup and chat with any of our
+                        <strong>volunteer organizers</strong>. The Spokane
+                        Front-End group doesn't have many
+                        dependencies/necessities, but things may change quickly.
+                    </p>
+                </div>
+            </article>
+
+            <article class="message is-warning">
+                <h3 class="message-header">
+                    I want to speak to the owner about sponsorships? FIX&nbsp;
+                </h3>
+                <div class="message-body">
+                    <p>
+                        Thank you! But --we don't have a owner. The Spokane
+                        Front-end Developers meetups are run by
+                        <strong>volunteer organizers</strong>. Your sponsorship
+                        helps pay for food/operating costs that are currently
+                        funded out of pocket.
+                    </p>
+                    <p>
+                        If you're interested, let's jump on a conversation
+                        <a
+                            href="mailto:rkev.defylogic+spokanefe@gmail.com"
+                            target="_blank"
+                            >via email.</a
+                        >
+                    </p>
+                </div>
+            </article>
         </section>
 
         <footer
@@ -666,10 +547,11 @@ Please make sure to update tests as appropriate.
             class="footer content has-text-centered has-background-light"
         >
             <p>
-                Make a README is maintained by
-                <a href="https://dannyguo.com">Danny Guo</a>, hosted on
-                <a href="https://github.com/dguo/make-a-readme">GitHub</a> with
-                a
+                The Spokane Front-end Meetup website is created by Rocky Kev,
+                cloned from
+                <a href="https://github.com/dguo/make-a-readme">Make a README</a
+                >, hosted on <a href="#">GitHub</a>, <br />
+                with a
                 <a
                     href="https://github.com/dguo/make-a-readme/blob/master/LICENSE"
                     >MIT license</a
@@ -699,10 +581,10 @@ Please make sure to update tests as appropriate.
             crossorigin="anonymous"
         ></script>
 
-        <script
+        <!-- <script
             src="https://app.codefund.io/properties/144/funder.js"
             async="async"
-        ></script>
+        ></script> -->
 
         <script src="index.js"></script>
     </body>

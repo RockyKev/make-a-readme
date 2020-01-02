@@ -1,6 +1,6 @@
-var CODEFUND_ELEMENT_ID = 'codefund';
-var CODEFUND_EVENT_NAME = 'codefund';
-var CODEFUND_SCRIPT_ID = 'codefund-script';
+// var CODEFUND_ELEMENT_ID = 'codefund';
+// var CODEFUND_EVENT_NAME = 'codefund';
+// var CODEFUND_SCRIPT_ID = 'codefund-script';
 
 function removeElementById(id) {
     var element = document.getElementById(id);
@@ -9,58 +9,58 @@ function removeElementById(id) {
     }
 }
 
-function loadCarbonAd() {
-    var carbonStyleSheet = document.createElement('link');
-    carbonStyleSheet.rel = 'stylesheet';
-    carbonStyleSheet.href = 'carbon.css';
-    document.head.appendChild(carbonStyleSheet);
+// function loadCarbonAd() {
+//     var carbonStyleSheet = document.createElement('link');
+//     carbonStyleSheet.rel = 'stylesheet';
+//     carbonStyleSheet.href = 'carbon.css';
+//     document.head.appendChild(carbonStyleSheet);
 
-    var carbonScript = document.createElement('script');
-    carbonScript.id = '_carbonads_js';
-    carbonScript.src =
-        '//cdn.carbonads.com/carbon.js?serve=CK7ITK3N&placement=wwwmakeareadmecom';
-    carbonScript.type = 'text/javascript';
+//     var carbonScript = document.createElement('script');
+//     carbonScript.id = '_carbonads_js';
+//     carbonScript.src =
+//         '//cdn.carbonads.com/carbon.js?serve=CK7ITK3N&placement=wwwmakeareadmecom';
+//     carbonScript.type = 'text/javascript';
 
-    var adSeparator = document.getElementById('ad-separator');
-    adSeparator.parentNode.insertBefore(carbonScript, adSeparator);
-}
+//     var adSeparator = document.getElementById('ad-separator');
+//     adSeparator.parentNode.insertBefore(carbonScript, adSeparator);
+// }
 
-function fallBackToCarbon() {
-    removeElementById(CODEFUND_ELEMENT_ID);
-    removeElementById(CODEFUND_SCRIPT_ID);
-    window.removeEventListener(CODEFUND_EVENT_NAME, handleCodeFundEvent);
+// function fallBackToCarbon() {
+//     removeElementById(CODEFUND_ELEMENT_ID);
+//     removeElementById(CODEFUND_SCRIPT_ID);
+//     window.removeEventListener(CODEFUND_EVENT_NAME, handleCodeFundEvent);
 
-    loadCarbonAd();
-}
+//     loadCarbonAd();
+// }
 
-function handleCodeFundEvent() {
-    if (event.detail.status === 'error') {
-        console.error('CodeFund failed to load: ' + event.detail.message);
-        fallBackToCarbon();
-    } else if (event.detail.status === 'no-advertiser') {
-        console.log("CodeFund doesn't have an available advertiser.");
-        fallBackToCarbon();
-    } else if (event.detail.status !== 'ok') {
-        console.error('CodeFund has an unknown status: ' + event.detail.status);
-        fallBackToCarbon();
-    }
-}
+// function handleCodeFundEvent() {
+//     if (event.detail.status === 'error') {
+//         console.error('CodeFund failed to load: ' + event.detail.message);
+//         fallBackToCarbon();
+//     } else if (event.detail.status === 'no-advertiser') {
+//         console.log("CodeFund doesn't have an available advertiser.");
+//         fallBackToCarbon();
+//     } else if (event.detail.status !== 'ok') {
+//         console.error('CodeFund has an unknown status: ' + event.detail.status);
+//         fallBackToCarbon();
+//     }
+// }
 
-window.addEventListener(CODEFUND_EVENT_NAME, handleCodeFundEvent);
+// window.addEventListener(CODEFUND_EVENT_NAME, handleCodeFundEvent);
 
-if (window.location.search) {
-    var queryParams = window.location.search.substring(1).split('&');
-    for (var i = 0; i < queryParams.length; i++) {
-        var queryParam = queryParams[i].split('=');
-        if (
-            queryParam.length === 2 &&
-            queryParam[0] === 'ad' &&
-            queryParam[1] === 'carbon'
-        ) {
-            fallBackToCarbon();
-        }
-    }
-}
+// if (window.location.search) {
+//     var queryParams = window.location.search.substring(1).split('&');
+//     for (var i = 0; i < queryParams.length; i++) {
+//         var queryParam = queryParams[i].split('=');
+//         if (
+//             queryParam.length === 2 &&
+//             queryParam[0] === 'ad' &&
+//             queryParam[1] === 'carbon'
+//         ) {
+//             fallBackToCarbon();
+//         }
+//     }
+// }
 
 anchors.options.placement = 'left';
 // One of the longer FAQ questions doesn't work with the default

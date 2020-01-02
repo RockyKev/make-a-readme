@@ -11,6 +11,34 @@ a,
     text-decoration: none;
 }
 
+.bg-img {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #999;
+    background-image: url(/images/Optimized-unsplash-dark.jpg) !important;
+
+    backdrop-filter: brightness(0.7);
+}
+
+.code-of-conduct-content {
+    padding: 0 0 0 15px;
+}
+
+.code-of-conduct-content ul li {
+    list-style: square outside none;
+    padding: 5px 15px;
+}
+
+.code-of-conduct-content ol {
+    padding-top: 20px;
+}
+
+.message-body p:first-child {
+    margin-top: 0px;
+}
+
 a:hover,
 #yet:hover,
 .message a:not(.button):hover {
