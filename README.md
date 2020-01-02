@@ -6,6 +6,8 @@ This site was cloned from Make A readme, and modified to fit the needs of the gr
 
 [x] Set up initial foundation
 [x] Populate content
+[ ] Create site
+[ ] Push live
 
 ## Contributing
 
